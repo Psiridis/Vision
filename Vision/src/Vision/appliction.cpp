@@ -18,7 +18,7 @@ namespace Vision {
 	{
 		while (true)
 		{
-			std::cout << "Application::run\n";
+			
 		}
 	}
 
