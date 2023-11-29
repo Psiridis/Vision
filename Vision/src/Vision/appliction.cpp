@@ -1,5 +1,5 @@
+#include "precompile.h"
 #include "appliction.h"
-#include <iostream>
 
 namespace Vision {
 

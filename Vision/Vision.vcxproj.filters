@@ -4,9 +4,24 @@
     <Filter Include="Vision">
       <UniqueIdentifier>{BD9427D8-A936-52AE-92F1-65027E32D9FE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Vision\Events">
+      <UniqueIdentifier>{01EA688D-6DAA-E4C3-36E5-2D41A26429A0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Vision.h" />
+    <ClInclude Include="src\Vision\Events\application_event.h">
+      <Filter>Vision\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vision\Events\event.h">
+      <Filter>Vision\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vision\Events\key_event.h">
+      <Filter>Vision\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vision\Events\mouse_event.h">
+      <Filter>Vision\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Vision\appliction.h">
       <Filter>Vision</Filter>
     </ClInclude>
@@ -19,6 +34,7 @@
     <ClInclude Include="src\Vision\log.h">
       <Filter>Vision</Filter>
     </ClInclude>
+    <ClInclude Include="src\precompile.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Vision\appliction.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Vision\log.cpp">
       <Filter>Vision</Filter>
     </ClCompile>
+    <ClCompile Include="src\precompile.cpp" />
   </ItemGroup>
 </Project>

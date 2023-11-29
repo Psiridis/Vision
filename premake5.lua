@@ -19,6 +19,9 @@ project "Vision"
 	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
 	objdir("bin-int/" .. outputDir .. "/%{prj.name}")
 
+	pchheader "precompile.h"
+	pchsource "Vision/src/precompile.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -28,6 +31,7 @@ project "Vision"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include/"
 	}
 
