@@ -11,6 +11,12 @@ workspace "Vision"
 
 outputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to the root
+IncludeDirs = {}
+IncludeDirs["GLFW"] = "Vision/vendor/GLFW/include/"
+
+include "Vision/vendor/GLFW" -- this is the directory of corresponding premake file
+
 project "Vision"
 	location "Vision"
 	kind "SharedLib"
@@ -32,7 +38,14 @@ project "Vision"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include/"
+		"%{prj.name}/vendor/spdlog/include/",
+		"%IncludeDirs.GLFW"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
