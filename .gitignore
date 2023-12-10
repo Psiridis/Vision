@@ -1,0 +1,7 @@
+#Directories
+bin-int/
+bin/
+
+#Files
+TheZoomies.sln
+TheZoomies/TheZoomies.vcxproj
